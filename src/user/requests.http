@@ -1,0 +1,28 @@
+POST http://localhost:3000/user/register
+content-type: application/json
+
+{
+    "firstName": "Petar",
+    "lastName": "Petrovic",
+    "email": "petarpetrovic@gmail.com",
+    "password": "1234",
+    "role": "admin"
+}
+
+### Deleting user
+DELETE http://localhost:3000/user/5
+
+### Sign in user
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email": "petarpetrovic@gmail.com",
+    "password": "1234"
+}
+
+### Get my data
+GET http://localhost:3000/user/me
+
+### Sign out user
+POST http://localhost:3000/user/logout
